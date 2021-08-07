@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 //import { Navbar, NavbarBrand } from 'reactstrap';
-import Main from './components/DirectoryComponent';
+import Main from './components/MainComponent';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import { CAMPSITES } from './shared/campsites';
+//import { CAMPSITES } from './shared/campsites';
 
 class App extends Component {
      render() {
         return (
-            <div className="App">
-                <Main />
-            </div>
+            <BrowserRouter>
+                <div className="App">
+                    <Main />
+                </div>
+            </BrowserRouter>
         );
     };
 }
